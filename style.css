@@ -1,0 +1,387 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #FFF5EE;
+}
+.main{
+    width: 100%;
+    margin-top: 50px;
+    font-family: "Quicksand", sans-serif;
+}
+.container{
+    /* background-color: aliceblue; */
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.col2{
+    flex-basis: 60%;
+    position: relative;
+}
+.col1, .col3{
+    flex-basis: 20%;
+}
+
+/* 1st col start */
+.page{
+
+}
+.box{
+    padding:30px ;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+/* 1st col End */
+
+
+
+/* 2nd col start */
+.task
+{
+    background-color: white;
+    height: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0px 15px;
+    flex-basis: 60%;
+    position: relative;
+}
+.task h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.task ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+.task ul li {
+    margin: 15px 0px;
+}
+
+.task ul li a {
+    
+    color: black;
+    font-size: 1.2rem;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+
+}
+
+#donebutton{
+    background-color: #62EEA8;
+    color: white;
+}
+#deletebutton{
+    background-color: #FF9F9F;
+    color: white;
+
+}
+
+/* 2nd col end */
+
+
+
+/* 3rd col start */
+
+.col3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.time{
+    height: 130px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+   
+    
+}
+.time h2, h5{
+    margin: 10px 0px;
+}
+.bookmarks{
+    height: 300px;
+   position: relative;
+    margin-top: 15px;
+    
+    padding: 10px;
+  text-align: center;
+    background-color: white;
+    border-radius: 10px;
+  
+}
+.bookmarks a{
+    margin: 10px 5px;
+    float: left;
+    display: block;
+}
+
+.extra{
+    height: 150px;
+
+}
+/* 3rd col end */
+
+
+form{
+    max-width: 500px;
+
+}
+
+form fieldset{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+form button{
+    width: 250px;
+}
+form input{
+    width: 100%;
+    padding: 10px;
+ 
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+
+    height: auto;
+}
+
+.popup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+
+}
+.popup h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+
+}
+
+/* style for plus button */
+
+#add{
+    font-size: 2rem;
+    position: absolute;
+    bottom: 20;
+    right: 30;
+    border-radius: 90%;
+  
+    height:70px;
+    width: 70px;
+}
+#add:hover{
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+/* style for cancle icon button */
+
+#cancleicon{
+    font-size: 2rem;
+    position: absolute;
+    top: 10;
+    right: 10;
+    border-radius: 90%;
+    height: 30px;
+    width: 30px;
+    font-size: 1.5rem;
+    background-color: yellow;
+}
+
+/* this is style for the add button on the popup */
+
+#addbutton{
+    width: 100px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* STYLE FOR HEALTH SECTION */
+
+.healthsection{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+}
+.shortbox{
+    position: relative;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+ 
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  
+    margin-bottom: 10px;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10;
+    right: 10;
+    border: 0;
+    outline: none;
+   
+    
+}
+
+.buttons i {
+  
+    margin: 0px 5px;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+}
+/* THIS IS FOR THE HEALTH SECTION  */
+
+.financesection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+
+.topbars{
+    padding: 15px 50px 10px 50px;
+    float: left;
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+    width: auto;
+}
+
+/* THIS IS FOR THE STYLE OF THE JOURNAL */
+.journalsection{
+
+    display: flex;
+    /* justify-content: space-around; */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.notes{
+    margin: 15px 0px;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    background-color:beige;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+/* THIS STYLE FOR PROFILE SECTION */
+.profilesection{
+    height: 90%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.profilepic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 20px 10px 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.profilename{
+    font-size: 2rem;
+    margin: 5px;
+}
+.profileemail{
+    font-size: 1rem;
+    margin: 5px;
+    background-color: beige;
+    padding: 12px;
+    border-radius: 90px;
+}
+
+/* STYLE FOR LOGIN FORM */
+
+#loginform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loginwelcome{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.logincontainer{
+    width: 100%;
+    display: flex;
+    background-color: ;
+    justify-content: space-around;
+    align-items: center;
+}
