@@ -44,7 +44,7 @@ if($_SERVER['REQUEST_METHOD'] ==='POST'){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log in</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
@@ -66,7 +66,8 @@ if($showerror){
         <div class="logincontainer">
 
             <div class="loginwelcome">
-            Welcome Back!
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://lottie.host/f88d7758-9d77-4502-bc61-145a6954f140/LYmDJ1xGaS.json" background="##FFFFFF" speed="1" style="width: 400px; height: 400px" loop  autoplay direction="1" mode="normal"></lottie-player>
             </div>
 
             <div>
@@ -76,13 +77,14 @@ if($showerror){
                                             <legend>Username</legend>
                                             <input type="text" name="username" placeholder="Enter Name" id="username" required>
                                         </fieldset>
-                            
+                            <br>
                                         <fieldset>
                                             <legend>Password</legend>
                                             <input type="password" name="password" placeholder="Enter Password" id="password" required>
                                         </fieldset>
-                                        <button>
-                                            <input type="submit" value="Submit">
+                            <br>
+                                        <button id="loginbtn">
+                                            <input type="submit" value="Submit" >
                                         </button>
                                         <br>
                                         <br>

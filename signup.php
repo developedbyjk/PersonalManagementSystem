@@ -46,34 +46,64 @@ if($_SERVER['REQUEST_METHOD'] ==='POST'){
 </head>
 <body>
     <div class="container">
-            <form action="signup.php" method="post">
-           
-            <fieldset>
-                <legend>Name</legend>
-                <input type="text" name="username" placeholder="Enter Name" id="username" required>
-            </fieldset>
+                               
 
-            <fieldset>
-                <legend>Email</legend>
-                <input type="email" name="email" placeholder="Enter Email" id="email" required>
-            </fieldset>
+            
+                        <div class="logincontainer">
 
-            <fieldset>
-                <legend>Password</legend>
-                <input type="password" name="password" placeholder="Enter Password" id="password" required>
-            </fieldset>
+                            <div class="loginwelcome">
+                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                            <lottie-player src="https://lottie.host/5bb20adb-57de-4c18-b60e-707c208479dc/X1lPpFlUUE.json" background="" speed="1" style="width: 500px; height: 500px" loop  autoplay direction="1" mode="normal"></lottie-player>
+                            </div>
 
-            <fieldset>
-                <legend>Emoji</legend>
-                <input type="text" name="emoji" placeholder="Enter Emoji" id="emoji" required>
-            </fieldset>
-            <button>
-                <input type="submit" value="Submit">
-            </button>
-            <br>
-            <br>
-            <p>Alredy have an account? <a href="login.php" >Login</a></p>
-            </form> 
+                            <div>
+                            
+
+                            <form action="signup.php" method="post" id="loginform">
+                            
+                            <fieldset>
+                                <legend>Name</legend>
+                                <input type="text" name="username" placeholder="Enter Name" id="username" required>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Email</legend>
+                                <input type="email" name="email" placeholder="Enter Email" id="email" required>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Password</legend>
+                                <input type="password" name="password" placeholder="Enter Password" id="password" required>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>Emoji</legend>
+                                <select name="emoji" id="emoji" required>
+                                    <option value="">Select Emoji</option>
+                                    <option value="😀">😀</option>
+                                    <option value="😃">😃</option>
+                                    <option value="😄">😄</option>
+                                    <option value="😊">😊</option>
+                                    <option value="😉">😉</option>
+                                    <option value="😍">😍</option>
+                                    <option value="🥰">🥰</option>
+                                    <option value="😘">😘</option>
+                                    <option value="😎">😎</option>
+                                    <option value="🤩">🤩</option>
+                                </select>
+                            </fieldset>
+                            <button  id="signupbtn">
+                                <input type="submit" value="Submit">
+                            </button>
+                            <br>
+                            <br>
+                            <p>Alredy have an account? <a href="login.php" >Login</a></p>
+                            </form> 
+                            </div>
+
+                        </div>
+
+
     </div>
 </body>
 </html>

@@ -124,6 +124,19 @@ if(isset($_GET['deletenotes'])) {
        exit;
 }
 
+if(isset($_GET['deletefinance'])) {
+    $id = $_GET['deletefinance'];
+    // $sql = "UPDATE todos SET completed=1 WHERE id=$id";
+    $sql = "DELETE FROM `finance` WHERE `finance`.`id` = $id";
+    $con->query($sql);
+
+       // Redirect to avoid resubmission
+       echo "<script>window.location.href = 'http://localhost/pms/?pg=finance';</script>";
+       exit;
+}
+
+
+
 
 
 

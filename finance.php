@@ -48,7 +48,7 @@ if(isset($_POST['amount'])) {
 
 }
 
-$gettotal = "SELECT  total FROM finance WHERE byuser = '".$_SESSION['username']."'";
+$gettotal = "SELECT  total FROM finance WHERE byuser = '".$_SESSION['username']."'  ORDER BY id DESC LIMIT 1";
 $totalresult = $con->query($gettotal);
 $total = $totalresult->fetch_assoc()['total'];
 
@@ -119,23 +119,37 @@ $financeresult = $con->query($financesql);
                                 </div>
                             </div>
 
-                            <?php 
-                            while($row = $financeresult->fetch_assoc()): 
-                            
-                                echo "<div class='shortbox'>";
-                                echo "<h3>" . $row['ie'] . "</h3>";
-                                echo "<p>" . $row['amount'] . "</p>";
-                                echo "<p>" . $row['note'] . "</p>";
-                                echo "<p>" . $row['date'] . "</p>";
-                                echo "</div>";
-                                
-                            endwhile; 
-                                 
-                            ?>
 
 
 
                         </div>
+
+                        
+                        <?php 
+                            while($row = $financeresult->fetch_assoc()): 
+                            
+                                echo "<div class='notes'>";
+                                echo "<h3>" . $row['ie'] . "</h3>";
+                                echo "<p>" . $row['amount'] . "</p>";
+                                echo "<p>" . $row['note'] . "</p>";
+                                echo "<i>" . $row['date'] . "</i>";
+
+                                ?>        
+                                <div class="buttons">
+                                        <button>
+                                        <a id="deletebutton" href="?deletefinance=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
+                                        </button>
+                                    </div>
+
+                                    <?php
+
+                                echo "</div>";
+
+                         
+                                
+                            endwhile; 
+                                 
+                            ?>
                        
                         <div id="financepopup" class="popup">
                             <h3>Total Balance : <?php echo $total ?></h3>

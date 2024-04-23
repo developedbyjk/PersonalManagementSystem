@@ -1,6 +1,9 @@
 <?php
 
 
+$financesql = "SELECT emoji FROM users WHERE username = '".$_SESSION['username']."'";
+$financeresult = $con->query($financesql);
+$emoji = $financeresult->fetch_assoc()['emoji'];
 
 
 ?>
@@ -11,10 +14,6 @@
                         <div class="box">
                             <a  href="/pms">Task 🔥</a>
                         </div>
-
-                    
-
-
     
                         <div class="box">
                             <a  href="?pg=health">Health 🍎</a>
@@ -35,7 +34,7 @@
                                
                             <!-- <i class="fa-regular fa-circle-user"></i> -->
                             <?php
-                                echo $_SESSION['username'] . " ". $_SESSION['emoji'];
+                                 echo $_SESSION['username'] . " ". $emoji;
                                 ?>
                             </h4>
                             </a>

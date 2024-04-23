@@ -21,7 +21,7 @@ body
 .container{
     /* background-color: aliceblue; */
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -44,7 +44,19 @@ body
     background-color: white;
     border-radius: 10px;
     margin-bottom: 15px;
-    
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.box a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.box:hover{
+    background-color: white;
+    cursor: pointer;
+    outline: 1px solid black;
+
 }
 /* 1st col End */
 
@@ -147,26 +159,50 @@ body
 
 form{
     max-width: 500px;
+    font-family: "Quicksand", sans-serif;
+    /* font-size: 3rem; */
+
 
 }
 
 form fieldset{
-    padding: 10px;
+    font-weight: bold;
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+    width: 100%;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+
 
 }
 form button{
-    width: 250px;
+    width: 100%;
+    padding: 10px;
+    
 }
 form input{
     width: 100%;
     padding: 10px;
- 
+ background-color: transparent;
     border: none;
     border-radius: 5px;
     outline: none;
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+}
+select, option{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: "Quicksand", sans-serif;
+
 }
 
 .popup {
@@ -175,12 +211,14 @@ form input{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #f9f9f9;
+    background-color: #FFF5EE;
     padding: 20px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-
+    
+    font-size: 1.2rem;
+border-radius: 10px;
     height: auto;
 }
 
@@ -196,7 +234,7 @@ form input{
 .popup h3{
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 
 }
 
@@ -208,9 +246,13 @@ form input{
     bottom: 20;
     right: 30;
     border-radius: 90%;
-  
+    background-color: white;
+    outline: none;
+    color: black;
+    border: 1px solid #ccc;
     height:70px;
     width: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 #add:hover{
     background-color: #f9f9f9;
@@ -222,13 +264,18 @@ form input{
 #cancleicon{
     font-size: 2rem;
     position: absolute;
-    top: 10;
-    right: 10;
+    top: 15;
+    right: 15;
     border-radius: 90%;
     height: 30px;
     width: 30px;
-    font-size: 1.5rem;
-    background-color: yellow;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #FF9F9F; */
 }
 
 /* this is style for the add button on the popup */
@@ -371,12 +418,16 @@ textarea{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    width: 400px;
+    /* background-color: yellow; */
 }
 
 .loginwelcome{
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
+    padding-right: 100px;
+    border-right: 1px rgba(139, 69, 19, 0.477) solid;
 }
 .logincontainer{
     width: 100%;
@@ -384,4 +435,28 @@ textarea{
     background-color: ;
     justify-content: space-around;
     align-items: center;
+}
+
+#signupbtn{
+    padding: 10px;
+    background-color:#ffa15c;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+}
+
+#loginbtn {
+    background-color: #8e62ac;
+    padding: 10px;
+  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+}
+#loginbtn input {
+    color: white;
 }
