@@ -23,8 +23,12 @@
                           
                      
                             <!-- <?php echo $row['bookmark_title']; ?> -->
-                            <a href="<?php echo $row['bookmark_link'] ?>" target="_blank" ><?php echo $row['bookmark_title']; ?></a>
-                            <a href="?deletebookmarid=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
+                           
+                            <div>
+                                <a href="<?php echo $row['bookmark_link'] ?>" target="_blank" ><?php echo $row['bookmark_title']; ?></a>
+                            </div>  
+                            <a id="deletebookmarlink" href="?deletebookmarid=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
+
                             <br/>
                         
                         <?php endwhile; ?>
@@ -47,4 +51,13 @@
                         </div>
 
                         </div>
+                            <div class="box">
+                            <form action="logout.php" method="post">
+                        
+                            <input type="submit" value="Logout">
+                            
+                            </form>
+                            </div>
                 </div>
+
+    

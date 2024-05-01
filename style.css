@@ -46,11 +46,22 @@ body
     margin-bottom: 15px;
     font-size: 1.2rem;
     transition: all 0.3s;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px; */
+
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
-.box a{
+
+#boxlink{
     text-decoration: none;
+    color: black;
     font-weight: 700;
+
 }
+
 
 .box:hover{
     background-color: white;
@@ -72,6 +83,7 @@ body
     margin: 0px 15px;
     flex-basis: 60%;
     position: relative;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .task h2{
     text-align: center;
@@ -127,6 +139,7 @@ body
     text-align: center;
     background-color: white;
     border-radius: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
    
     
 }
@@ -134,20 +147,39 @@ body
     margin: 10px 0px;
 }
 .bookmarks{
-    height: 300px;
+    height: 340px;
    position: relative;
     margin-top: 15px;
+    margin-bottom: 15px;
     
     padding: 10px;
   text-align: center;
     background-color: white;
     border-radius: 10px;
+
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   
 }
 .bookmarks a{
+
     margin: 10px 5px;
     float: left;
     display: block;
+    background-color: #0C0C0C;
+    padding: 10px 15px;
+    font-style: italic;
+    color: #ccc;
+    border-radius: 90px;
+    z-index: 99;
+
+}
+
+#deletebookmarlink{
+    background-color: crimson;
+    color: aliceblue;
+    transform: translate(50px, 0px);
+    z-index: -999;
+    
 }
 
 .extra{
@@ -460,3 +492,126 @@ textarea{
 #loginbtn input {
     color: white;
 }
+
+.active{
+    background-color: #ffde91;
+    cursor: pointer;
+    outline: 1px solid black;
+}
+
+/* STYLE FOR DASHBOARD */
+.dashboard{
+    padding-top: 100px;
+    /* padding:  100px; */
+    /* background-color: #62EEA8; */
+    display: flex;
+    /* height: 600px; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: hotpink; */
+
+}
+
+.blocks{
+    display: flex;
+  
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    padding-left: 20px;
+    margin: 20px;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    /* box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; */
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px; */
+}
+
+
+#blocklinks{
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+}
+.blocks h3{
+    font-size: 4rem;
+}
+.blocks p{
+    margin-top: 10px;
+    font-size:1.7rem;
+}
+.blocks:hover{
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(-10px);
+}
+
+
+.taskblock{
+    background-color: #4286f45e;
+}
+.taskblock h3,.taskblock p  {
+    color: #4285f4;
+}
+
+
+.healthblock{
+    /* background-color: #fda099; */
+    background-color: #ea44356d;
+   
+}
+.healthblock h3, .healthblock p {
+    color: #ea4335
+}
+.healthblock:hover{
+    outline:3px solid #ea4335;
+}
+
+.financeblock{
+    background-color: rgba(160, 253, 160, 0.5);
+}
+.financeblock h3, .financeblock p {
+    color: #34a853
+}
+.financeblock:hover{
+    outline : 3px solid #34a853;
+}
+
+
+.journalblock{
+    background-color: #ffda94fc;
+}
+.journalblock h3,.journalblock p  {
+    color: #ffa700;;
+}
+.journalblock:hover{
+    outline: 3px solid #ffa700;
+}
+
+
+
+.dashboardblock{
+    background-color: #a9a9a9;
+}
+
+.dashboardblock h3,.dashboardblock p  {
+    color: #000000;
+}
+.dashboardblock:hover{
+    outline: 3px solid #000000;
+}
+
+
+.profileblock{
+    background-color: #5d167565;
+}
+.profileblock h3,.profileblock p  {
+    color: #5E1675;
+}
+.profileblock:hover{
+    outline: 3px solid #5E1675;
+}
+
+
