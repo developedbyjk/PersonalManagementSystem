@@ -62,7 +62,7 @@ $healthesult = $con->query($healthsql);
 
                         <div class="healthsection">
 
-                            <div class="shortbox">
+                            <!-- <div class="shortbox">
                                 <h3>Medical History</h3>
                                 <p>- dentist checku</p>
                                 <p>- got cought and cold</p>
@@ -76,7 +76,7 @@ $healthesult = $con->query($healthsql);
                                     <a id="deletebutton" href="?deletehealthbox=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
                                     </button>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <?php while($row = $healthesult->fetch_assoc()): ?>
 
@@ -85,11 +85,11 @@ $healthesult = $con->query($healthsql);
                                     <?php echo isset($row['health_details']) ? $row['health_details'] : ''; ?>
 
                                     <div class="buttons">
-                                        <button>
+                                        <!-- <button>
                                             <i class="fa-solid fa-pen-to-square"></i>
-                                        </button>
-                                        <button>
-                                        <a id="deletebutton" href="?deletehealthbox=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
+                                        </button> -->
+                                        <button id="deletebuttons">
+                                        <a  href="?deletehealthbox=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
                                         </button>
                                     </div>
                                 </div>

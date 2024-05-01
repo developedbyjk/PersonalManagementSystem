@@ -15,7 +15,7 @@
                     </div>
 
                     <div class="bookmarks">
-                        <h4>Bookmarks</h4>
+                        <!-- <h4>Bookmarks</h4> -->
                         <!-- <a href="">Study Material</a>
                         <br><br>    
                         <a href="">Youtube Stuff</a> -->
@@ -23,11 +23,18 @@
                           
                      
                             <!-- <?php echo $row['bookmark_title']; ?> -->
-                           
-                            <div>
-                                <a href="<?php echo $row['bookmark_link'] ?>" target="_blank" ><?php echo $row['bookmark_title']; ?></a>
-                            </div>  
-                            <a id="deletebookmarlink" href="?deletebookmarid=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
+                          
+
+
+                           <div class="makebookmarflex">
+                                <a id="styleforbookmarlink" href="<?php echo $row['bookmark_link'] ?>" target="_blank" ><?php echo $row['bookmark_title']; ?></a>
+                                <a id="deletebookmarlink" href="?deletebookmarid=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
+                           </div> 
+                          
+
+
+                  
+                     
 
                             <br/>
                         
@@ -54,7 +61,8 @@
                             <div class="box">
                             <form action="logout.php" method="post">
                         
-                            <input type="submit" value="Logout">
+                            <input type="submit" value="Logout 🌃">
+                            
                             
                             </form>
                             </div>

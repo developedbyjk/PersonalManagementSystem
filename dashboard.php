@@ -16,7 +16,11 @@
         <div class="task" id="task">
             
             <!-- <h2>journal Section 📝</h2>
+            h1
+    
             <hr> -->
+
+            <h1 id="welcomemsg" >Welcom <?php echo $_SESSION['username'] ?></h1>
 
             <div class="dashboard">
                 

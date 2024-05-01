@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 
 *{
     margin: 0;
@@ -83,6 +85,7 @@ body
     margin: 0px 15px;
     flex-basis: 60%;
     position: relative;
+    overflow: overlay;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .task h2{
@@ -151,8 +154,10 @@ body
    position: relative;
     margin-top: 15px;
     margin-bottom: 15px;
+    overflow: overlay;
     
-    padding: 10px;
+    
+    padding: 15px;
   text-align: center;
     background-color: white;
     border-radius: 10px;
@@ -160,10 +165,12 @@ body
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   
 }
-.bookmarks a{
 
-    margin: 10px 5px;
+#styleforbookmarlink{
+
+    margin: 0px 5px;
     float: left;
+    width: 100%;
     display: block;
     background-color: #0C0C0C;
     padding: 10px 15px;
@@ -171,14 +178,28 @@ body
     color: #ccc;
     border-radius: 90px;
     z-index: 99;
+    transition: all 0.3s;
+
+}
+
+
+
+.makebookmarflex{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -5px 0px;
 
 }
 
 #deletebookmarlink{
     background-color: crimson;
     color: aliceblue;
-    transform: translate(50px, 0px);
-    z-index: -999;
+    /* transform: translate(-40px, 0px);; */
+  padding: 10px;
+  border-radius: 90px;
+  
     
 }
 
@@ -291,6 +312,8 @@ border-radius: 10px;
     cursor: pointer;
 }
 
+
+
 /* style for cancle icon button */
 
 #cancleicon{
@@ -330,14 +353,18 @@ border-radius: 10px;
     /* justify-content: space-around; */
     margin-top: 20px;
     flex-wrap: wrap;
+    height: 500px;
+    overflow:overlay;
 
 }
 .shortbox{
     position: relative;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: white;
+
     border-radius: 10px;
- 
+    border: 3px dashed #ccc;
+
     width: 200px;
     height: 200px;
     margin: 20px;
@@ -373,21 +400,27 @@ textarea{
 /* THIS IS FOR THE HEALTH SECTION  */
 
 .financesection{
+ 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-top: 20px;
+   
     flex-wrap: wrap;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
+
+/* this style was for thar bars */
 .topbars{
     padding: 15px 50px 10px 50px;
     float: left;
+    width: 100%;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 10px;
     width: auto;
+    border: 2px solid #ccc;
 }
 
 /* THIS IS FOR THE STYLE OF THE JOURNAL */
@@ -403,13 +436,47 @@ textarea{
 .notes{
     margin: 15px 0px;
     position: relative;
-    padding: 20px;
+    padding: 20px 40px;
+
     width: 100%;
-    border-radius: 15px;
+    display: flex;
+    /* border-radius: 15px; */
     background-color:beige;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    font-family: "Questrial", sans-serif;
+}
+.ienumber{
+    background-color: white;
+    text-align: center;
+    height: 100px;
+    width: 200px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    border-right: 5px dashed #ccc;
 }
 
+
+.ienote{
+    padding: 20px;
+    font-size: 1.2rem;
+
+
+}
+.ienote p{
+    margin-right: 10px;
+}
+
+#dateoffinancenote{
+    background-color: dimgray;
+    border-radius: 90px;
+    padding: 10px 15px;
+    color: whitesmoke;
+    position: absolute;
+    top: 10;
+    right: 10;
+    font-size: 1rem;
+    color:#ffde91;
+}
 /* THIS STYLE FOR PROFILE SECTION */
 .profilesection{
     height: 90%;
@@ -513,6 +580,13 @@ textarea{
 
 }
 
+#welcomemsg{
+    font-size: 2rem;
+    margin-top: 20px;
+    text-align: center;
+
+
+}
 .blocks{
     display: flex;
   
@@ -614,4 +688,19 @@ textarea{
     outline: 3px solid #5E1675;
 }
 
+#deletebuttons{
+
+    background-color: crimson;
+    color: aliceblue;
+    /* transform: translate(-40px, 0px);; */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid white;
+}
+
+#deletebuttons a{
+    color: white;
+}
 

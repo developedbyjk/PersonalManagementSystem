@@ -30,9 +30,11 @@ if(isset($_POST['amount'])) {
 
     if($ie == 'income'){
         $total = $total + $amount;
+     
     }
     else{
         $total = $total - $amount;
+       
     }
     
   
@@ -78,12 +80,12 @@ $financeresult = $con->query($financesql);
 </html>
 <div class="task" id="task">
     
-                        <h2>Finance Section 💸</h2>
+                        <h2>Finance Section 💸  |  <i>Total Balance </i> <?php echo $total ?></h2>
                         <hr>
 
                         <div class="financesection">
 
-                            <div class="topbars">
+                            <!-- <div class="topbars">
                                 <div>
                                     <h4>
                                         Income 📈
@@ -105,19 +107,19 @@ $financeresult = $con->query($financesql);
                                     </h2>
 
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="topbars">
+                            <!-- <div class="topbars">
                                 <div>
                                     <h4>
                                         Total 💰
                                     </h4>
                                     <h2>
-                                    <?php echo $total ?>
+                                    
                                     </h2>
 
                                 </div>
-                            </div>
+                            </div> -->
 
 
 
@@ -126,13 +128,24 @@ $financeresult = $con->query($financesql);
 
                         
                         <?php 
-                            while($row = $financeresult->fetch_assoc()): 
+                            while($row = $financeresult->fetch_assoc()):
+                                
+                                if($row['ie'] == 'income'){
+                                    $notecolor = '#79ea86';
+                                }
+                                else{
+                                    $notecolor = '#e75757';
+                                }
                             
-                                echo "<div class='notes'>";
-                                echo "<h3>" . $row['ie'] . "</h3>";
-                                echo "<p>" . $row['amount'] . "</p>";
+                                echo "<div class='notes' style='background-color:". $notecolor ." '>";
+                                echo "<div class='ienumber' > ";
+                                echo "<h1>" . $row['amount'] . "</h1>";
+                                echo "<h3 >" . $row['ie'] . "</h3>";
+                                echo "</div>";
+                                echo "<div class='ienote'>";
                                 echo "<p>" . $row['note'] . "</p>";
-                                echo "<i>" . $row['date'] . "</i>";
+                                echo "</div>";
+                                echo "<i id='dateoffinancenote'>" . $row['date'] . "</i>";
 
                                 ?>        
                                 <div class="buttons">
@@ -186,7 +199,7 @@ $financeresult = $con->query($financesql);
                                 <input type="radio" name="gender" id="expense" value="expense">
                             </fieldset>
 
-                            <input type="text" name="hote" placeholder="Enter Note"/>
+                            <input type="text" name="note" placeholder="Enter Note"/>
                                 
                                 <button type="submit" id="addbutton" >Add</button>
                                 <button type="button" id="cancleicon" onclick="closePopup(financepopup)"><i id="plusicon" class="fa-solid fa-xmark"></i></button>
