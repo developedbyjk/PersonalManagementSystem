@@ -24,29 +24,36 @@
                 <img id="img3" src="https://i.giphy.com/111ebonMs90YLu.webp" alt="">
                 <img id="img4" src="https://i.giphy.com/Um3ljJl8jrnHy.webp" alt="">
         </div>
-
-        <section>
-            <div class="features">
-                <h2>Features</h2>
-                <div class="feature">
-                    <img src="https://i.giphy.com/111ebonMs90YLu.webp" alt="">
-                    <h3>Health</h3>
-                    <p>Keep track of your health</p>
-                </div>
-                <div class="feature">
-                    <img src="https://i.giphy.com/Um3ljJl8jrnHy.webp" alt="">
-                    <h3>Finance</h3>
-                    <p>Keep track of your finance</p>
-                </div>
-                <div class="feature">
-                    <img src="https://i.giphy.com/gtakVlnStZUbe.webp" alt="">
-                    <h3>Admin</h3>
-                    <p>Admin panel to manage users</p>
-                </div>
-            </div>
-        </section>
-
     </div>
+
+    <section>
+            <div class="features">
+                <div class="featuresbox">
+                    <h1>✅</h1>
+                    <h2>To-do</h2>
+                    <p>
+                        Keep track of your daily tasks and manage your time effectively.
+                    </p>
+                </div>
+
+                <div class="featuresbox">
+                    <h1>💰</h1>
+                    <h2>Finance</h2>
+                    <p>
+                        Keep track of your income and expenses and manage your finances effectively.
+                    </p>
+                </div>
+
+                <div class="featuresbox">
+                    <h1>❤️</h1>
+                    <h2>Health</h2>
+                    <p>
+                        Keep track of your health and fitness and manage your health effectively.
+                    </p>
+                </div>
+
+            </div>
+    </section>
 
 </body>
 </html>

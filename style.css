@@ -226,6 +226,8 @@ header{
     /* margin-top: 50px; */
     font-family: "Quicksand", sans-serif;
 }
+
+/* STYLE FOR THE FEATURE SECTION OF WELCOME PAGE */
 .container{
     /* background-color: aliceblue; */
     margin: 0 auto;
@@ -233,9 +235,22 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column;
-
 }
+
+section{
+    width: 80%;
+    margin: 150px auto;
+    background-color: palegoldenrod;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
 .col2{
     flex-basis: 60%;
     position: relative;
