@@ -18,6 +18,17 @@ function isActive($page) {
 
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS</title>
+</head>
+<body>
+    
+
+
 
 <div class="col1">
                     <div class="page">
@@ -78,3 +89,7 @@ function isActive($page) {
                         </div> -->
                     </div>
                 </div>
+
+
+                </body>
+</html>

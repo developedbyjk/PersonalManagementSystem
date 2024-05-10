@@ -83,5 +83,9 @@
 
 
         </div>
-</body>
+
+        <div class="feedback">
+            <h3><a href="?pg=feedback">Please Leave Feedback Here</a></h3>
+        </div>
+</body> 
 </html>

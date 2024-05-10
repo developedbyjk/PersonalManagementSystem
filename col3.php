@@ -59,12 +59,12 @@
 
                         </div>
                             <div class="box">
-                            <form action="logout.php" method="post">
-                        
-                            <input type="submit" value="Logout 🌃">
-                            
-                            
-                            </form>
+                                    <form action="logout.php" method="post">
+                                
+                                    <input type="submit" value="Logout 🌃">
+                                    
+                                    
+                                    </form>
                             </div>
                 </div>
 

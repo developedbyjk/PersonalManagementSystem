@@ -29,6 +29,7 @@ if(isset($_POST['task'])) {
        exit;
 }
 
+// add in bookmark
 if(isset($_POST['bookmark_title'])) {
     $bookmark_title = $_POST['bookmark_title'];
     echo $bookmark_title;
@@ -45,6 +46,9 @@ if(isset($_POST['bookmark_title'])) {
        header("Location: " . $_SERVER['PHP_SELF']);
        exit;
 }
+
+// add feedback
+
 
 
 
@@ -179,7 +183,7 @@ $bookresult = $con->query($booksql);
 
     <div class="main">
   
-
+    <?php include 'navbar.php'; ?>
 
         <div class="container">
           

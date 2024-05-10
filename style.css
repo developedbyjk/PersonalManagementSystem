@@ -4,6 +4,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* for hindi */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
 
 *{
     margin: 0;
@@ -15,9 +22,208 @@ body
 {
     background-color: #FFF5EE;
 }
+
+/* STYLE FOR FEEDBACK SECTION  */
+.feedback{
+    position: absolute;
+    bottom: 20;
+}
+
+/* .feedback-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .feedback-section {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-section h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .feedback-section p {
+    font-size: 16px;
+    margin: 0;
+  } */
+  
+
+  .feedback-container{
+    width: 800px;
+    display: flex;
+    flex-basis: auto;
+    position: relative;
+    border: 4px dashed #ccc;
+    margin: 20px;
+    background-color: whitesmoke;
+    gap: 100px;
+  }
+
+  .feedback-container div{
+    padding: 10px;
+   
+  }
+
+  .feedback-section {
+   padding: 0px 20px;
+  }
+
+  .feedbackusername{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px 40px;
+    background-color: yellow;
+  }
+  
+
+
+  
+
+
+/* STYLE FOR WELCOME SECTION */
+nav{
+    background-color: gold;
+  border-radius: 90px;
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+   
+
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.3s;
+    padding: 10px;
+
+
+}
+
+.hero{
+
+    height: 580px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 50px;
+    position: relative;
+    /* background-color: #62EEA8; */
+    /* border: 5px dashed rgba(128, 128, 128, 0.441); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all  .5s;
+    
+}
+/* .hero:hover{
+    width: 1100px;
+    
+    background-color: #ccc;
+} */
+
+.hero:hover img{
+    margin: 50px;
+    height: 150px;
+}
+ .hero h1{
+   
+    font-size: 6rem;
+    font-family: "Playfair Display", serif; 
+}
+
+.hero p {
+    font-family: "Tiro Devanagari Hindi", serif;
+    padding: 20px 40px;
+    font-size: 3rem;
+    background-color: gold;
+}
+.hero img{
+    position: absolute;
+    height: 140px;
+    width: auto;
+    z-index: 1;
+    border: 4px solid black;
+    border-radius: 10px;
+    transition: all .5s;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+#img1{
+    top: 0;
+    left: 0;
+}
+
+#img2{
+    top: 0;
+    right: 0;
+}
+
+#img3{
+    bottom: 0;
+    left: 0;
+}
+
+#img4{
+    bottom: 0;
+    right: 0;
+}
+
+.hero button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: gold;
+    border: 5px solid black;
+    border-radius: 90px;
+    font-size: 2rem;
+ font-weight: bolder;
+    cursor: pointer;
+ 
+    font-family: "Playfair Display", serif; 
+
+
+}
+#herobtn{
+    transition: width 1s;
+}
+
+.hero button:hover {
+    
+    width: 500px;
+}
+/* STYLE FOR WELCOME SECTION END */
+
+header{
+    background-color: #FF9F9F;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Quicksand", sans-serif;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
 .main{
     width: 100%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     font-family: "Quicksand", sans-serif;
 }
 .container{
@@ -27,6 +233,7 @@ body
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
 
 }
 .col2{
@@ -211,7 +418,7 @@ body
 
 
 form{
-    max-width: 500px;
+    /* max-width: 500px; */
     font-family: "Quicksand", sans-serif;
     /* font-size: 3rem; */
 
@@ -704,3 +911,63 @@ textarea{
     color: white;
 }
 
+.admindataholder{
+
+    /* display: block;
+    margin: auto 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #5E1675; */
+    background-color: cornsilk;
+    font-family: "Lexend", sans-serif;
+
+
+}
+
+.admindata{
+    position: relative;
+    width: 800px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:flex-start;
+    float: left;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: #FDE49E;
+   
+}
+
+#admindeletebtn{
+    
+    background-color: crimson;
+    padding: 10px 30px;
+    width: 100px;
+    position: absolute;
+    bottom: 10;
+    right: 10;
+ 
+    /* margin-left: 200px; */
+}
+#admindeletebtn a{
+    text-decoration: none;
+    color: white;
+}
+
+#adminlogoutbtn{
+        position: fixed;
+      bottom: 0;
+      width: 100px;
+      right: 0;
+      margin: 30px;
+    background-color: crimson;
+    border-radius: 0px ;
+    color: aliceblue;
+    /* margin-left: 200px; */
+}
+
+.adminbody{
+    position: relative;
+}

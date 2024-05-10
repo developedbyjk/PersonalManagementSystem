@@ -53,8 +53,7 @@ $healthesult = $con->query($healthsql);
 </head>
 <body>
     
-</body>
-</html>
+
 <div class="task" id="task">
     
                         <h2>Health Section 🍎</h2>
@@ -125,3 +124,6 @@ $healthesult = $con->query($healthsql);
                         
 </div>
 <script src = "script.js"></script>
+
+</body>
+</html>
