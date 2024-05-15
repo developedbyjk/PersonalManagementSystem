@@ -5,12 +5,12 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="?pg=dashboard">Home</a></li>
-                    <li><a href="?pg=journal">Journal</a></li>
-                    <li><a href="?pg=todo">Todo</a></li>
-                    <li><a href="?pg=profile">Profile</a></li>
-                    <li><a href="adminlogin.php">Admin</a></li>
-                    <li><a href="?pg=logout">Logout</a></li>
+                    <li><a href="/pms/?pg=dashboard">Home</a></li>
+                    <li><a href="/pms/?pg=dashboard">Task</a></li>
+                    <li><a href="/pms/?pg=health">Health</a></li>
+                    <li><a href="/pms/?pg=finance">Finance</a></li>
+                    <li><a href="/pms/?pg=journal">Journal</a></li>
+                    <li><a href="/pms/?pg=profile">Profile</a></li>
                 </ul>
             </div>
         </div>

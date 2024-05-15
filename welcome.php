@@ -26,6 +26,10 @@
         </div>
     </div>
 
+
+
+    <span id="que">Why PMS</span>
+
     <section>
             <div class="features">
                 <div class="featuresbox">
@@ -52,7 +56,67 @@
                     </p>
                 </div>
 
+             
+
             </div>
+
+            <div class="features">
+                
+                
+                <div class="featuresbox">
+                    <h1>📒</h1>
+                    <h2>Journal</h2>
+                    <p>
+                        <p>
+                            Keep a personal journal and record your thoughts, experiences, and reflections.
+                        </p>
+                    </p>
+                </div>
+
+                <div class="featuresbox">
+                    <h1>🔖</h1>
+                    <h2>Bookmark</h2>
+                    <p>
+                        Keep track of your favorite websites and easily access them whenever you want.
+                    </p>
+                </div>
+
+                <div class="featuresbox">
+                    <h1>⏳</h1>
+                    <h2>Time</h2>
+                    <p>
+                        <p>
+                            Keep track of your schedule and manage your time effectively.
+                        </p>
+                    </p>
+                </div>
+
+                
+
+            </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <section id="forsceenshot">
+
+        <div class="screenshot1">
+            <img src=" Images\homepage.png" alt="">
+            <button>Make it Yours</button>
+        </div>
+
+        <div class="welcomeabout">
+            <h1>About Us</h1>
+            <p>
+                We are a team of developers who are passionate about creating innovative solutions to everyday problems. 
+                Our goal is to help people manage their personal lives more effectively and efficiently.
+                We believe that by providing tools and resources to help people stay organized and focused,
+                we can make a positive impact on their lives. 
+                Our Personal Management System is designed to help you keep track of your tasks, finances, health, and more, all in one convenient place. 
+                Try it out today and see how it can help you stay on top of your busy life!
+            </p>
+        </div> 
     </section>
 
 </body>

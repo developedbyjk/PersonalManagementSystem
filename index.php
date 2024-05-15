@@ -3,7 +3,7 @@
 
 session_start();
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
-    header("location: login.php");
+    header("location: welcome.php");
     exit;
 }
 
@@ -184,6 +184,8 @@ $bookresult = $con->query($booksql);
     <div class="main">
   
     <?php include 'navbar.php'; ?>
+    <br>
+    <br>
 
         <div class="container">
           
