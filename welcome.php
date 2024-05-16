@@ -28,7 +28,7 @@
 
 
 
-    <span id="que">Why PMS</span>
+    <div class="quebeforefeatures">A Place to Mange Your...</div>
 
     <section>
             <div class="features">
@@ -107,17 +107,50 @@
         </div>
 
         <div class="welcomeabout">
-            <h1>About Us</h1>
-            <p>
-                We are a team of developers who are passionate about creating innovative solutions to everyday problems. 
-                Our goal is to help people manage their personal lives more effectively and efficiently.
-                We believe that by providing tools and resources to help people stay organized and focused,
-                we can make a positive impact on their lives. 
-                Our Personal Management System is designed to help you keep track of your tasks, finances, health, and more, all in one convenient place. 
-                Try it out today and see how it can help you stay on top of your busy life!
-            </p>
+            <div>
+                <h1>About Us👀</h1>
+                <br>
+                <br>
+                <img src="https://i.giphy.com/2ce2NqZPa04PZvT1Xn.webp" alt="">
+            </div>
+            <div>
+                
+                <p>
+                    We are a team of developers who are passionate about creating innovative solutions to everyday problems. 
+                    Our goal is to help people manage their personal lives more effectively and efficiently. We believe that by providing tools and resources to help people stay organized and focused,
+                    we can make a positive impact on their lives. 
+               <br>
+               <br>
+                    Our Personal Management System is designed to help you keep track of your tasks, finances, health, and more, all in one convenient place. 
+                    Try it out today and see how it can help you stay on top of your busy life!
+                </p>
+            </div>
+    
         </div> 
+
+        
     </section>
+
+
+    <footer>
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="" alt="">
+                    <h1><a href="welcome.php">Peronal Management System</a></h1>
+                    <p>Oraganize your life Efficently </p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="/pms/?pg=dashboard">Home</a></li>
+                        <li><a href="/pms/?pg=dashboard">Task</a></li>
+                        <li><a href="/pms/?pg=health">Health</a></li>
+                        <li><a href="/pms/?pg=finance">Finance</a></li>
+                        <li><a href="/pms/?pg=journal">Journal</a></li>
+                        <li><a href="/pms/?pg=profile">Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 </body>
 </html>

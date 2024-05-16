@@ -171,12 +171,37 @@ nav{
  
     
 }
+.welcomeabout{
+    margin: 150px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 100%;
+    background-color: #2d3233; 
+  gap: 10px; 
+  border-radius: 10px;
+  /* padding: 50px 0px; */
+    
+}
+.welcomeabout h1{
+    font-size: 3rem;
+    font-family: "Questrial", sans-serif;
+    color: gold;
+    font-weight: bolder;
+    text-align: center;
+}
+.welcomeabout img{
+    border-radius: 10px;
+}
 
 .welcomeabout p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 20px 40px;
     font-family: "Quicksand", sans-serif;
     background-color: gold;
+    border-radius: 10px;
+    font-weight: 500
+    ;
 
 }
 
@@ -283,6 +308,12 @@ section{
     width: 80%;
     margin: 150px auto;
     background-color: palegoldenrod;
+}
+.quebeforefeatures{
+    margin:    200px 0px 50px 0px; ;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .features{
@@ -1063,4 +1094,45 @@ textarea{
 
 .adminbody{
     position: relative;
+}
+
+/* FOOTER STYLE */
+
+.footer {
+    font-family: "Lexend", sans-serif;
+    height: 200px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.footer-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    /* display: inline-block; */
+    margin-right: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links ul li a:hover {
+    color: #666;
 }
