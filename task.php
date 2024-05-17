@@ -1,3 +1,15 @@
+<?php
+
+
+
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
+    header("location: welcome.php");
+    exit;
+}
+
+?>
+
 <div class="col2">
                     <div class="task" id="task">
                         <h2>Todays Task 🔥</h2>

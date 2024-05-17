@@ -1,5 +1,16 @@
 <?php
 
+session_start();
+if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true){
+    // User is logged in
+    // Add your code here for logged in users
+    echo "You are logged in";
+    header("location: index.php");
+    exit;
+    
+}
+
+
 if($_SERVER['REQUEST_METHOD'] ==='POST'){
    
     include '_dbconnect.php';
@@ -45,6 +56,8 @@ if($_SERVER['REQUEST_METHOD'] ==='POST'){
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<?php include 'navbar.php'; ?>
     <div class="container">
                                
 

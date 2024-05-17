@@ -1,10 +1,28 @@
 <?php
+
+// if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
+   
+// }
+session_start();
+if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true){
+    // User is logged in
+    // Add your code here for logged in users
+    echo "You are logged in";
+    header("location: index.php");
+    exit;
+    
+}
+
+
+
     $user=false;
     $showerror = false;
  
 if($_SERVER['REQUEST_METHOD'] ==='POST'){
    
     include '_dbconnect.php';
+
+    $shownoauth = false;
 
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -48,6 +66,7 @@ if($_SERVER['REQUEST_METHOD'] ==='POST'){
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
+<?php include 'navbar.php'; ?>
 
 <?php
 if($user){

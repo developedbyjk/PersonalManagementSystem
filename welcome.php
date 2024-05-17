@@ -1,3 +1,53 @@
+<?php
+
+
+
+// if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
+//     // echo $_SESSION['loggedin'];
+//     // header("location: welcome.php");
+//     // exit;
+//     $shownoauth = true;
+// }
+
+// if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+//     // User is logged in
+//     // Add your code here for logged in users
+//     $shownoauth = false;
+//     echo $shownoauth;
+//     echo "You are logged in";
+    
+// } else {
+
+//     $shownoauth = true;
+//     echo $shownoauth;
+//     // User is not logged in
+//     // Add your code here for non-logged in users
+//     echo "You are not logged in";
+// }
+
+$shownoauth = true;
+
+session_start();
+if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true){
+    // User is logged in
+    // Add your code here for logged in users
+    echo "<script>alert('wow you are logged in')</script>";
+    echo "You are logged in";
+
+    echo "you name is ". $_SESSION['username'] ;
+    // header("location: index.php");
+    $shownoauth = false;
+    
+    // exit;
+
+    
+}
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,11 +59,26 @@
 
 <body>
 
-   <?php include 'navbar.php'; ?>
+
+   <?php 
+   if ($shownoauth){
+
+     include 'navbarnoauth.php';
+
+     echo "<span style='background-color:crimson;color:white;z-index:9999'>You need to login first</span>";
+
+   }else{
+
+     include 'navbar.php';
+     
+   }
+   
+   
+   ?>
     <div class="container">
 
         <div class="hero">
-            <h1>Welcome to</h1>
+            <h1>Welcome <?php  echo $_SESSION['username']  ?> to </h1>
             <p>
                 पर्सनल मैनेजमेंट सिस्टम
       
@@ -103,14 +168,16 @@
 
         <div class="screenshot1">
             <img src=" Images\homepage.png" alt="">
-            <button>Make it Yours</button>
+            <button><a href="\pms\signup.php">Make it Yours</a></button>
         </div>
 
         <div class="welcomeabout">
+
             <div>
-                <h1>About Us👀</h1>
+                <h1 id="aboutonpage">About Us👀</h1>
                 <br>
                 <br>
+           
                 <img src="https://i.giphy.com/2ce2NqZPa04PZvT1Xn.webp" alt="">
             </div>
             <div>
@@ -141,12 +208,11 @@
                 </div>
                 <div class="footer-links">
                     <ul>
-                        <li><a href="/pms/?pg=dashboard">Home</a></li>
-                        <li><a href="/pms/?pg=dashboard">Task</a></li>
-                        <li><a href="/pms/?pg=health">Health</a></li>
-                        <li><a href="/pms/?pg=finance">Finance</a></li>
-                        <li><a href="/pms/?pg=journal">Journal</a></li>
-                        <li><a href="/pms/?pg=profile">Profile</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutonpage">About</a></li>
+                        <li><a href="/pms/?pg=health">Contact</a></li>
+                        <li><a href="/pms/?pg=finance">Privacy</a></li>
+                        <li><a href="/pms/?pg=todo">Terms</a></li>
                     </ul>
                 </div>
             </div>

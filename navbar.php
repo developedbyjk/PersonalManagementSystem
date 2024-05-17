@@ -6,7 +6,7 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="/pms/?pg=dashboard">Home</a></li>
-                    <li><a href="/pms/?pg=dashboard">Task</a></li>
+                    <li><a href="/pms/?pg=task">Task</a></li>
                     <li><a href="/pms/?pg=health">Health</a></li>
                     <li><a href="/pms/?pg=finance">Finance</a></li>
                     <li><a href="/pms/?pg=journal">Journal</a></li>
