@@ -25,22 +25,20 @@
 //     echo "You are not logged in";
 // }
 
+session_start();
 $shownoauth = true;
 
-session_start();
-if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true){
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
     // User is logged in
     // Add your code here for logged in users
-    echo "<script>alert('wow you are logged in')</script>";
-    echo "You are logged in";
+    // echo "<script>alert('wow you are logged in')</script>";
+    // echo "You are logged in";
 
-    echo "you name is ". $_SESSION['username'] ;
+    // echo "your name is ". $_SESSION['username'] ;
     // header("location: index.php");
     $shownoauth = false;
     
     // exit;
-
-    
 }
 
 
@@ -65,7 +63,7 @@ if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true){
 
      include 'navbarnoauth.php';
 
-     echo "<span style='background-color:crimson;color:white;z-index:9999'>You need to login first</span>";
+    //  echo "<span style='background-color:crimson;color:white;z-index:9999'>You need to login first</span>";
 
    }else{
 
@@ -78,14 +76,14 @@ if(isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == true){
     <div class="container">
 
         <div class="hero">
-            <h1>Welcome <?php  echo $_SESSION['username']  ?> to </h1>
+            <h1>Welcome <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'You'; ?> to </h1>
             <p>
                 पर्सनल मैनेजमेंट सिस्टम
       
             </p>
-            <button id="herobtn">Try Now</button>
-            <img id="img1" src="https://i.giphy.com/EaSRzJYZabLZ3LuCvQ.webp" alt="">
-                <img id="img2" src="https://i.giphy.com/gtakVlnStZUbe.webp" alt="">
+            <button id="herobtn"><a href="/pms/signup.php">Try Now</a></button>
+            <img id="img1" src="https://i.giphy.com/RMlE1VnIHzdneThR6w.webp" alt="">
+                <img id="img2" src="https://i.giphy.com/iIT5Y3Tz5AJ6yr4j55.webp" alt="">
                 <img id="img3" src="https://i.giphy.com/111ebonMs90YLu.webp" alt="">
                 <img id="img4" src="https://i.giphy.com/Um3ljJl8jrnHy.webp" alt="">
         </div>

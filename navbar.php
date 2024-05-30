@@ -11,6 +11,7 @@
                     <li><a href="/pms/?pg=finance">Finance</a></li>
                     <li><a href="/pms/?pg=journal">Journal</a></li>
                     <li><a href="/pms/?pg=profile">Profile</a></li>
+                    <li><a href="/pms/logout.php">Logout</a></li>
                 </ul>
             </div>
         </div>
