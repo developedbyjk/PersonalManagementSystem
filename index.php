@@ -25,7 +25,8 @@ if(isset($_POST['task'])) {
     $con->query($sql);
 
        // Redirect to avoid resubmission
-       header("Location: " . $_SERVER['PHP_SELF']);
+    //    header("Location: " . $_SERVER['PHP_SELF']);
+       echo "<script>window.location.href = 'http://localhost/pms/?pg=task';</script>";
        exit;
 }
 
@@ -192,6 +193,7 @@ $bookresult = $con->query($booksql);
                 <?php 
                 include 'col1.php';
                 ?>
+
 
                 <?php
                 include $renderpage . '.php';

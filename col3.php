@@ -30,9 +30,14 @@
                                 <a id="styleforbookmarlink" href="<?php echo $row['bookmark_link'] ?>" target="_blank" ><?php echo $row['bookmark_title']; ?></a>
                                 <a id="deletebookmarlink" href="?deletebookmarid=<?php echo $row['id']; ?>" >  <i class="fa-regular fa-trash-can"></i> </a>
                            </div> 
+
+
+
+                           
                           
 
-
+                    
+                
                   
                      
 

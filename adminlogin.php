@@ -87,7 +87,7 @@ if($showerror){
                                         <br>
                                         <br>
                                         
-                                        <p>Dont have an account? <a href="signup.php" >Sign up</a></p>
+                                        <!-- <p>Dont have an account? <a href="signup.php" >Sign up</a></p> -->
             </form>
             </div>
             

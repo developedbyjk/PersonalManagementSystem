@@ -84,8 +84,8 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
             <button id="herobtn"><a href="/pms/signup.php">Try Now</a></button>
             <img id="img1" src="https://i.giphy.com/RMlE1VnIHzdneThR6w.webp" alt="">
                 <img id="img2" src="https://i.giphy.com/iIT5Y3Tz5AJ6yr4j55.webp" alt="">
-                <img id="img3" src="https://i.giphy.com/111ebonMs90YLu.webp" alt="">
-                <img id="img4" src="https://i.giphy.com/Um3ljJl8jrnHy.webp" alt="">
+                <img id="img3" src="https://i.giphy.com/kLOkqcrdC5mrCE7k7G.webp" alt="">
+                <img id="img4" src="https://i.giphy.com/d15kGggSJHwn7lGPrf.webp" alt="">
         </div>
     </div>
 
